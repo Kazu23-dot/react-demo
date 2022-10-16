@@ -27,17 +27,18 @@ class App extends Component {
             </div>
 
             <div className="contents">
-               <Tabs forceRenderTabPanel defaultIndex={1}>
-                 <TabList>
-                  <Tab>MainTab</Tab>
-                   <Tab>SubTab</Tab>
-                 </TabList>
+               <Tabs forceRenderTabPanel defaultIndex={0}>
+                  <TabList>
+                    <Tab defaultIndex={0}>Main</Tab>
+                    <Tab defaultIndex={1}>Sub</Tab>
+                  </TabList>
                  <TabPanel>
-                  <Tabs forceRenderTabPanel>
+                  <Tabs forceRenderTabPanel defaultIndex={0}>
                     <TabList>
-                      <Tab>Home</Tab>
-                      <Tab>Settings</Tab>       
-                      <Tab>Option</Tab> 
+                      <Tab defaultIndex={0}>Home</Tab>
+                      <Tab defaultIndex={1}>Demo</Tab>
+                      <Tab defaultIndex={2}>Settings</Tab>       
+                      <Tab defaultIndex={3}>Option</Tab> 
                     </TabList>
                     <TabPanel>
                        <div className="MainContent1">
@@ -45,6 +46,9 @@ class App extends Component {
                           <Counter />   
                        </div>
                     </TabPanel>
+                    <TabPanel>
+                      <h1>Demo_Panel</h1>          
+                    </TabPanel>  
                     <TabPanel>
                       <h1>Settings_Panel</h1>          
                     </TabPanel>    
@@ -55,24 +59,30 @@ class App extends Component {
                  </TabPanel>
 
                  <TabPanel>
-                  <Tabs forceRenderTabPanel>
+                  <Tabs forceRenderTabPanel defaultIndex={0}>
                     <TabList>
-                      <Tab>Home</Tab>
-                      <Tab>Settings</Tab>       
-                      <Tab>Option</Tab> 
+                      <Tab defaultIndex={0}>Home</Tab>
+                      <Tab defaultIndex={1}>Demo</Tab>
+                      <Tab defaultIndex={2}>Settings</Tab>       
+                      <Tab defaultIndex={3}>Option</Tab> 
                     </TabList>
                     <TabPanel>
-                       <h1>SubContent</h1>
-                       <Counter />          
+                       <div className="MainContent1">
+                          <h1>MainContent</h1>
+                          <Counter />   
+                       </div>
                     </TabPanel>
                     <TabPanel>
-                      <h1>Sub-Settings_Panel</h1>          
+                      <h1>Demo_Panel</h1>          
+                    </TabPanel>  
+                    <TabPanel>
+                      <h1>Settings_Panel</h1>          
                     </TabPanel>    
                     <TabPanel>
-                      <h1>Sub-Option_Panel</h1>          
+                      <h1>Option_Panel</h1>          
                     </TabPanel>  
                   </Tabs>  
-                 </TabPanel>         
+                 </TabPanel>        
                </Tabs>
             </div>
           </div>
