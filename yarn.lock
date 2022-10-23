@@ -7797,6 +7797,13 @@ react-burger-menu@^3.0.8:
     prop-types "^15.7.2"
     snapsvg-cjs "0.0.6"
 
+react-data-grid@^7.0.0-beta.19:
+  version "7.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/react-data-grid/-/react-data-grid-7.0.0-beta.19.tgz#0498225e78ab555caaa0e1bd8ec0b4b56fe89e19"
+  integrity sha512-Sfz+cAOioqEEokdlQSaczkICHVPmt7wLiOmH3aUH2B3BFjZwM0K54gnQ92LbnjOddua54rHLFIO54N0vUeXRaQ==
+  dependencies:
+    clsx "^1.1.1"
+
 react-dev-utils@^12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-12.0.1.tgz#ba92edb4a1f379bd46ccd6bcd4e7bc398df33e73"

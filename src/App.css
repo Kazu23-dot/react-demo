@@ -156,6 +156,12 @@
   height:calc(100vh - 75px);
 }
 
+.App .main div.DataGrid{
+  margin-left:auto;
+  margin-right:auto;
+  width:1000px
+}
+
 ul.react-tabs__tab-list{
   text-align: center;
   background-color:#333333;

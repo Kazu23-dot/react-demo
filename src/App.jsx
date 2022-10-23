@@ -1,16 +1,15 @@
 import React, { Component} from 'react'
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import Sidebar from "./Components/SidebarMenu";
 import Counter from "./Components/Counter";
 import Menu from "./Components/SidebarMenu";
 import HeaderIcon from "./Images/icon.png";
 import './App.css';
-
+import ReactDataGrid from "./Components/ReactDataGrid"
 
 class App extends Component {
   render(){
-    return(
+    return(     
       /*下記のように必ずComponentは1つの親タグで括ること。複数にするとエラーとなる */
       <div className="App">
         <body>
@@ -24,7 +23,7 @@ class App extends Component {
           <div className="main">
             <div className="SideMenu">
               <Menu width={250}/>
-            </div>
+            </div>            
 
             <div className="contents">
                <Tabs forceRenderTabPanel defaultIndex={0}>
@@ -47,10 +46,16 @@ class App extends Component {
                        </div>
                     </TabPanel>
                     <TabPanel>
-                      <h1>Demo_Panel</h1>          
+                      <h1>Demo_Panel</h1> 
+                      <div className='DataGrid'>
+                        <ReactDataGrid/>                  
+                      </div>                         
                     </TabPanel>  
                     <TabPanel>
-                      <h1>Settings_Panel</h1>          
+                      <h1>Settings_Panel</h1>   
+                      <div className='DataGrid'>
+                        <ReactDataGrid/>       
+                      </div>
                     </TabPanel>    
                     <TabPanel>
                       <h1>Option_Panel</h1>          
