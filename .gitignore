@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/python-demo-backend/__pycache__
+/python-demo-backend/venv
 /.pnp
 .pnp.js
 

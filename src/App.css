@@ -156,6 +156,12 @@
   height:calc(100vh - 75px);
 }
 
+.App .main div.CssModules{
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .App .main div.DataGrid{
   margin-left:auto;
   margin-right:auto;
@@ -173,7 +179,6 @@ div.react-tabs__tab-panel{
   vertical-align: middle;
 }
 
-
 /*** footer ***/
 .App .footer {
   position: fixed;
@@ -183,7 +188,6 @@ div.react-tabs__tab-panel{
   height:45px;
   width:100%;
 }
-
 
 /**ハンバーガーメニューのスタイリング**/
 /*

@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import classes from "./Style/CounterCss.module.scss";
 
 class Counter extends Component {
     constructor(props){
@@ -24,8 +25,8 @@ class Counter extends Component {
         return (
             <div>
                 <p>Count : {this.state.count}</p>
-                <button onClick={this.increment}>+</button>
-                <button onClick={this.decrement}>-</button>
+                <button className={classes.button} onClick={this.increment}>+</button>
+                <button className={classes.button} onClick={this.decrement}>-</button>
             </div>
         )
     }
